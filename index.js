@@ -1,9 +1,8 @@
 const express = require('express');
-const app = express();
+const passport = require('passport');
+const GoogleStrategy = require('passport-google-oauth20').Strategy;
 
-app.get('/', (req, res) => {
-  res.send({ hello: 'world' });
-});
+const app = express();
 
 // Dynamic port binding for Heroku
 const PORT = process.env.PORT || 5000;
