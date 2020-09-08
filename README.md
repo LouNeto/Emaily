@@ -4,8 +4,20 @@ Emaily is an application that allows its users to send surveys to a list of emai
 
 # Usage
 
-- ToDo
+- Work in progress
 
 # Technologies
 
-- ToDo
+Main stack of technologies
+
+- MongoDB
+- Express
+- React
+- Node
+
+Other technologies
+
+- Heroku
+- Mongoose
+- Passportjs
+  - Google OAuth2 Strategy
