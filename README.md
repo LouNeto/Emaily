@@ -17,7 +17,12 @@ Main stack of technologies
 
 Other technologies
 
-- Heroku
+- Deployed on Heroku
+- Axios
+- Redux
+
 - Mongoose
 - Passportjs
   - Google OAuth2 Strategy
+- Stripe
+- Materialize CSS
