@@ -1,0 +1,54 @@
+.landing-message {
+  text-align: center;
+  margin-top: 15%;
+}
+
+.brand-logo {
+  margin-left: 10px;
+}
+
+.results {
+  height: 50px;
+  width: 100%;
+  margin: 5px 0 0;
+}
+.results .on {
+  height: 50px;
+  opacity: 0.75;
+  width: 0;
+}
+.results .on .count {
+  line-height: 50px;
+  font-size: 25px;
+  vertical-align: middle;
+  text-align: left;
+  margin: 0 10px;
+  position: relative;
+  left: 50%;
+  display: inline-block;
+  text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.75);
+}
+
+/* #option-1 .results .on {
+  width: 25%;
+} */
+.option-label,
+.results .on .count {
+  color: #242424;
+}
+
+.results {
+  background-color: rgba(221, 221, 221, 0.5);
+}
+
+.results .on {
+  background-color: #2c8b34;
+}
+
+.results .no {
+  background-color: rgba(238, 57, 57, 0.5);
+}
+
+.add-survey {
+  margin-right: 5%;
+}

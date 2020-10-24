@@ -7,8 +7,16 @@ class SurveyList extends Component {
     this.props.fetchSurveys();
   }
 
+  calculatePollPercentage = ({ yes, no }) => {
+    if (yes === 0) {
+      return 0;
+    }
+    return (yes / (yes + no)) * 100;
+  };
+
   renderSurveys() {
     return this.props.surveys.reverse().map((survey) => {
+      const percentage = this.calculatePollPercentage(survey);
       return (
         <div className="card darken-1" key={survey.id}>
           <div className="card-content">
@@ -19,8 +27,26 @@ class SurveyList extends Component {
             </p>
           </div>
           <div className="card-action">
-            <a>Yes: {survey.yes}</a>
-            <a>No: {survey.no}</a>
+            <div id="option-1" className="option">
+              <div className="results">
+                <div className="on" style={{ width: `${percentage}%` }}>
+                  {/* <span className="count">{percentage}%</span> */}
+                </div>
+              </div>
+            </div>
+            <a style={{ color: '#2c8b34' }}>Yes: {survey.yes}</a>
+
+            <div id="option-1" className="option">
+              <div className="results">
+                <div
+                  className="on no"
+                  style={{ width: `${percentage}%`, marginTop: '5px' }}
+                >
+                  {/* <span className="count">{percentage}%</span> */}
+                </div>
+              </div>
+            </div>
+            <a style={{ color: 'rgba(238, 57, 57, 0.5)' }}>No: {survey.no}</a>
           </div>
         </div>
       );
