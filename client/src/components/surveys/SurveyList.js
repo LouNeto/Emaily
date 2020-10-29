@@ -27,25 +27,21 @@ class SurveyList extends Component {
             </p>
           </div>
           <div className="card-action">
-            <div id="option-1" className="option">
+            {/* <div id="option-1" className="option">
               <div className="results">
-                <div className="on" style={{ width: `${percentage}%` }}>
-                  {/* <span className="count">{percentage}%</span> */}
-                </div>
+                <div className="on" style={{ width: `${percentage}%` }}></div>
               </div>
-            </div>
+            </div> */}
             <a style={{ color: '#2c8b34' }}>Yes: {survey.yes}</a>
 
-            <div id="option-1" className="option">
+            {/* <div id="option-1" className="option">
               <div className="results">
                 <div
                   className="on no"
                   style={{ width: `${percentage}%`, marginTop: '5px' }}
-                >
-                  {/* <span className="count">{percentage}%</span> */}
-                </div>
+                ></div>
               </div>
-            </div>
+            </div> */}
             <a style={{ color: 'rgba(238, 57, 57, 0.5)' }}>No: {survey.no}</a>
           </div>
         </div>
